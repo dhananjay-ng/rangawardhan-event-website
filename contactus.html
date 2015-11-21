@@ -1,0 +1,124 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Rangawardhan</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="contactstyle.css" rel="stylesheet">
+           <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<body id="page-top" class="index">
+
+
+
+<div class="container">
+    <div class="row">    
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-image">
+                    <img class="img-responsive" src="http://lorempixel.com/555/300/sports">
+                    
+                </div><!-- card image -->
+                
+                <div class="card-content">
+                    <span class="card-title">Material Cards</span>                    
+                   <button type="button" class="btn btn-custom pull-right show-btn" data-rel="1" aria-label="Left Align">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                </div><!-- card content -->
+                <div class="card-action">
+                    <a href="#" target="new_blank">Link</a>
+                </div><!-- card actions -->
+               <div class="card-reveal" data-rel="1">
+                    <span class="card-title">Card Title</span> <button type="button" class="close" data-rel="1" data-dismiss="modal" aria-label="Close">                        <i class="fa fa-ellipsis-v"></i></button>
+                    <h4>Here is some more information about this product that is only revealed once clicked on.</h4>
+                    <ul>
+                   <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                   <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                   
+                    </ul>
+                </div><!-- card reveal -->
+            </div>
+        </div>
+      </div>
+</div>
+
+
+<!--
+      	<div class="col-lg-6 col-xs-12">
+
+      		<div id="card"> 
+                 <div class="front"  >
+                  <img src="img\15ff00.jpg" class="img-responsive" alt="Image">
+                </div>
+                <div id="back">
+ 					 <img src="img\15ff00.jpg" class="img-responsive" alt="Image">
+                </div>     
+      		
+            </div>	
+      	</div>    
+
+      	<div class="col-sm-6 col-xs-12 ">
+      		<div id="card1" > 
+                 <div class="front"> 
+                  <img src="img\15ff00.jpg" class="img-responsive" alt="Image">
+                </div>
+                <div id="back">
+ 					 <img src="img\15ff00.jpg" class="img-responsive" alt="Image">
+                </div>     
+      		
+            </div>	
+
+      	</div>	
+   -->
+      
+    </div>
+           
+
+</div>
+  
+
+
+
+
+
+ <script src="js/jquery.js"></script>
+<script type="text/javascript">
+	
+
+
+$(function(){
+
+   $('.show-btn').on('click', function () {
+$('div.card-reveal[data-rel=' + $(this).data('rel') + ']').slideToggle('slow');
+});
+
+$('.card-reveal .close').on('click', function() {
+$('div.card-reveal[data-rel=' + $(this).data('rel') + ']').slideToggle('slow');
+});
+});
+</script>    
+   
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+  
+ 
+</body>
+
+</html>
