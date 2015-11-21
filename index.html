@@ -9,12 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Rangawardhan</title>
+    <title>Rangawardhan.</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet"><link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
     <!-- Custom CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fakeLoader.css" type="text/css">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -22,14 +23,18 @@
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
           <script src="https://use.fonticons.com/41563df1.js"></script>
 
-           <link rel="stylesheet" href="css/fakeLoader.css">
 
 
 </head>
-          <div class="fakeloader"></div>
 
   <body id="page-top" class="index">
-   
+<div id="loader-wrapper">
+            <div id="loader"></div>
+
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+        </div>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -91,7 +96,6 @@
       
 
 
-       </div>
 
     
        <div class="container " id="about">
@@ -468,27 +472,10 @@
     </div>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-            <script src="js/fakeLoader.min.js"></script>
-<script type="text/javascript">
-
-$("#fakeloader").fakeLoader({
-
-timeToHide:1200, //Time in milliseconds for fakeLoader disappear
-
-zIndex:"999",//Default zIndex
-
-spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
-
-bgColor:"#2ecc71", //Hex, RGB or RGBA colors
-
-//imagePath:"yourPath/customizedImage.gif" //If you want can you insert your custom image
-
-});
-
-</script>
-
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/fakeLoader.min.js"></script>
+       
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
