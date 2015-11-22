@@ -17,9 +17,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="contactstyle.css" rel="stylesheet">
            <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+               <link href="modal.css" rel="stylesheet" type="text/css">
 
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+
+
+
 
 <body id="page-top" class="index">
 
@@ -96,6 +101,69 @@
 
 
 
+
+
+
+
+
+
+<!-- Button modal transparent -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-transparent">
+  Launch modal transparent
+</button>
+
+<!-- Modal transparent -->
+<div class="modal modal-transparent fade" id="modal-transparent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+  
+<!-- Button modal fullscreen -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-fullscreen">
+  Launch modal fullscreen
+</button>
+
+<!-- Modal fullscreen -->
+<div class="modal modal-fullscreen fade" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+
+
+
+
+
+
+
+
  <script src="js/jquery.js"></script>
 <script type="text/javascript">
 	
@@ -118,7 +186,30 @@ $('div.card-reveal[data-rel=' + $(this).data('rel') + ']').slideToggle('slow');
 
     <!-- Plugin JavaScript -->
   
- 
+   <script type="text/javascript">
+
+// .modal-backdrop classes
+
+$(".modal-transparent").on('show.bs.modal', function () {
+  setTimeout( function() {
+    $(".modal-backdrop").addClass("modal-backdrop-transparent");
+  }, 0);
+});
+$(".modal-transparent").on('hidden.bs.modal', function () {
+  $(".modal-backdrop").addClass("modal-backdrop-transparent");
+});
+
+$(".modal-fullscreen").on('show.bs.modal', function () {
+  setTimeout( function() {
+    $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+  }, 0);
+});
+$(".modal-fullscreen").on('hidden.bs.modal', function () {
+  $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+});
+
+
+    </script>
 </body>
 
 </html>
