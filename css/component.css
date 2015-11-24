@@ -44,7 +44,7 @@
 
 .grid figcaption h2 {
 	margin: 0 0 20px 0;
-	color: #3498db;
+	color: black;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 300;
@@ -55,7 +55,7 @@
 
 .grid figcaption p {
 	padding: 0 20px;
-	color: #aaa;
+	color: black;
 	font-weight: 300;
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
 	transition: opacity 0.3s, transform 0.3s;
@@ -96,7 +96,7 @@
 }
 
 .grid svg path {
-	fill: #fff;
+	fill: white;
 }
 
 /* Hover effects */
@@ -125,7 +125,7 @@
 	left: 50%;
 	border: 3px solid #fff;
 	background: transparent;
-	color: #fff;
+	color: black;
 	opacity: 0;
 	-webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
 	transform: translateY(-50%) translateX(-50%) scale(0.25);
@@ -143,7 +143,7 @@
 }
 
 .demo-2 .grid figcaption h2 {
-	color: #e74c3c;
+	color: black;
 }
 
 .demo-2 .grid figcaption p {
@@ -157,7 +157,7 @@
 	padding: 15px;
 	width: 100%;
 	background: #fff;
-	color: #333;
+	color: black;
 	font-weight: 300;
 	-webkit-transform: translateY(100%);
 	transform: translateY(100%);
@@ -192,7 +192,7 @@
 }
 
 .demo-3 .grid figcaption h2 {
-	color: #52be7f;
+	color: black;
 }
 
 .demo-3 .grid a:hover figcaption h2 {

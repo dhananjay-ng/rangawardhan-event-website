@@ -21,6 +21,7 @@ a {
 .social {
   position: fixed;
   top: 200px;
+  z-index: 4;
 }
 .social ul {
   padding: 0px;
@@ -33,7 +34,7 @@ a {
 .social ul li {
   display: block;
   margin: 5px;
-  background: rgba(0, 0, 0, 0.36);
+  background: white;
   width: 300px;
   text-align: right;
   padding: 10px;
@@ -52,7 +53,7 @@ a {
   -ms-transform: translate(110px, 0);
   -o-transform: translate(110px, 0);
   transform: translate(110px, 0);
-  background: rgba(255, 255, 255, 0.4);
+  background: white;
 }
 .social ul li:hover a {
   color: #000;
@@ -98,4 +99,4 @@ a {
 .social-icons .fa-instagram{background-color:#A1755C;}
 .social-icons .fa-linkedin,.social-icons .fa-linkedin-square{background-color:#0085AE;} 
 .social-icons .fa-twitter,.social-icons .fa-twitter-square{background-color:#32CCFE;} 
-.social-icons .fa-youtube,.social-icons .fa-youtube-play,.social-icons .fa-youtube-square{background-color:#C52F30;}
+.social-icons .fa-youtube,.social-icons .fa-youtube-play,.social-icons .fa-youtube-square{background-color:#c4302b;}
